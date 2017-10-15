@@ -1,2 +1,2 @@
-echarts-2.2.7/
-!build/
+jslib/echarts-2.2.7/
+!jslib/echarts-2.2.7/build/
