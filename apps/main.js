@@ -13,5 +13,8 @@ window.onload = function() {
             stroke: '#F00'
         }
     });
+    circle.on('click', function() {
+        var a = this;
+    }, circle);
     zr.add(circle);
 }
