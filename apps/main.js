@@ -1,18 +1,17 @@
+window.onload = function() {
 
-window.onload = function(){
+    var zr = zrender.init(document.getElementById('main'));
 
-    charts.bar.startup();
-
-    function getNewDate(value) {
-        return value instanceof Date ? value : new Date(typeof value == 'string' ? value.replace(/-/g, '/') : value);
-    }
-
-    function nextMonday(value) {
-        value = getNewDate(value);
-        value.setDate(value.getDate() + 8 - value.getDay());
-        return value;
-    }
-
-    var a = nextMonday(new Date()).getDate();
-
+    var circle = new zrender.Circle({
+        shape: {
+            cx: 150,
+            cy: 50,
+            r: 40
+        },
+        style: {
+            fill: 'none',
+            stroke: '#F00'
+        }
+    });
+    zr.add(circle);
 }
