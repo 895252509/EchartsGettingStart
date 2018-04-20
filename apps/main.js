@@ -18,3 +18,11 @@ window.onload = function() {
     }, circle);
     zr.add(circle);
 }
+
+var keys = ["time", "foottype" /*在这里把你的name都写上*/ ];
+var str = "";
+keys.forEach(function(key) {
+    str += search_obj[key];
+    str += ",";
+})
+console.log(str);
